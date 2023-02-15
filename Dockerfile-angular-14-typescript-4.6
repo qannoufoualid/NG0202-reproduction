@@ -1,0 +1,16 @@
+FROM node:16.13.2-alpine
+
+COPY . /my-lib/
+WORKDIR "my-lib"
+RUN cat package-angular-14-typescript-4.8.json > package.json
+
+# pnpm installation
+RUN npm install -g pnpm
+
+# package installation
+RUN pnpm i
+
+# running the test
+RUN pnpm test:my-lib-1
+
+
