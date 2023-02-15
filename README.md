@@ -8,4 +8,4 @@ This can happen if the dependency type is a primitive like a string or if an anc
 
 2 - docker build -f Dockerfile-angular-14-typescript-4.6 .
 
-please notice that there is no error and the test pass successfully
+please notice that with Angular 14 and typescript 4.6 there is no error and the test pass successfully
